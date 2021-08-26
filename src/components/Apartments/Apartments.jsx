@@ -7,7 +7,7 @@ const Apartments = () => {
 	return (
 		<div className="container">
 			<div className="header-container">
-				<h1 className="header">Stays in Finland</h1>
+				<h1 className="header">Stays in Nigeria</h1>
 				<p className="number-of-stays">12+ stays</p>
 			</div>
 			<div className="apartments-container">

@@ -17,6 +17,14 @@
 	padding: 17px 15px;
 }
 
+.searchBarContainer .searchContainer {
+	border-right: 0;
+}
+
+.searchContainer {
+	cursor: pointer;
+}
+
 .location-text {
 	color: #333333;
 }

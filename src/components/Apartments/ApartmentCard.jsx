@@ -3,7 +3,9 @@ import "./Apartments.css";
 const Card = ({ data }) => {
 	return (
 		<div key={Math.random()} className="card">
-			<img className="image" alt="apartment" src={data.photo} />
+			<div className="imageContainer">
+				<img className="image" alt="apartment" src={data.photo} />
+			</div>
 			<div className="apartment-info">
 				<div className="apartment-details">
 					{data.superHost ? (
