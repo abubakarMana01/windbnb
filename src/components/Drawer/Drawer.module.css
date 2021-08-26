@@ -180,6 +180,13 @@
   border: 1px solid #bdbdbd;
 }
 
+.listsContainer {
+  align-self: flex-start;
+  margin-left: 5%;
+  display: flex;
+  width: 90%;
+}
+
 @media (max-width: 500px) {
   .filtersContainer {
     flex-direction: column;
@@ -208,5 +215,17 @@
     bottom: 0;
     margin-bottom: 30px;
     height: fit-content;
+  }
+
+  #searchList {
+    display: none;
+  }
+
+  .listsContainer {
+    flex-direction: column;
+  }
+
+  .guestsList {
+    padding: 15px;
   }
 }

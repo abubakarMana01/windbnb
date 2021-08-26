@@ -8,17 +8,23 @@ const Drawer = () => {
     const locationInput = document.querySelector("#location");
 
     const guestsList = document.querySelector("#guestsList");
+    const locationsList = document.querySelector("#locationsList");
     if (document.activeElement === guestsInput) {
       console.log(guestsList);
       guestsList.style.opacity = 1;
       guestsList.style.pointerEvents = "all";
+
+      if (window.screen.width <= 500) {
+        locationsList.style.display = "none";
+      }
     } else {
       console.log(guestsList);
       guestsList.style.opacity = 0;
       guestsList.style.pointerEvents = "none";
+      locationsList.style.height = "fit-content";
+      locationsList.style.display = "block";
     }
 
-    const locationsList = document.querySelector("#locationsList");
     if (document.activeElement === locationInput) {
       console.log(locationsList);
       locationsList.style.opacity = 1;
@@ -72,14 +78,7 @@ const Drawer = () => {
           </div>
         </div>
 
-        <div
-          style={{
-            alignSelf: "flex-start",
-            marginLeft: "5%",
-            display: "flex",
-            width: "90%",
-          }}
-        >
+        <div className={styles.listsContainer}>
           <ul id="locationsList" className={styles.locationsList}>
             <SingleLocation text="Lagos, Nigeria" />
             <SingleLocation text="Port-Harcourt, Nigeria" />
