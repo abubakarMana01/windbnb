@@ -1,8 +1,6 @@
 import styles from "./Drawer.module.css";
 import SingleLocation from "./SingleLocation";
 
-import stays from "../../stays.json";
-
 const Drawer = () => {
 	const openDrawer = e => {
 		const drawer = document.getElementById("drawer-bg");
